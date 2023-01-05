@@ -3,6 +3,14 @@ using System.Data.Common;
 using System.Globalization;
 using Newtonsoft.Json;
 
+var tipoAnonimo = new { Nome = "Carlos", Sobrenome = "Buta", Altura = 1.83 };
+Console.WriteLine("Nome: " + tipoAnonimo.Nome);
+Console.WriteLine("Sobrenome: " + tipoAnonimo.Sobrenome);
+Console.WriteLine("Altura: " + tipoAnonimo.Altura);
+
+Console.ReadLine();
+
+
 /*
 bool? desejaReceberEmail = null;
 
@@ -16,11 +24,7 @@ else
 }*/
 
 
-
-
-
-
-
+/*
 string conteudoArquivo = File.ReadAllText("../../../Arquivos/vendas.json");
 
 List<Venda> listaVenda = JsonConvert.DeserializeObject<List<Venda>>(conteudoArquivo);
@@ -30,9 +34,7 @@ foreach (Venda venda in listaVenda)
     Console.WriteLine($"Id: {venda.Id}, Produto: {venda.Produto}, Preco: {venda.Preco}, " +
                       $"Data da venda: {venda.DataVenda.ToString("dd/MM/yyyy HH:mm")}, "+
                       $"Desconto: {(venda.Desconto.HasValue ? venda.Desconto : "Sem desconto")}");
-}
-
-Console.ReadLine();
+}*/
 
 /*
 DateTime dataAtual = DateTime.Now;
