@@ -3,8 +3,15 @@ using System.Data.Common;
 using System.Globalization;
 using Newtonsoft.Json;
 
+dynamic variavelDinamica = 4;
 
+Console.WriteLine($"Tipo da variável: {variavelDinamica.GetType()}, Valor: {variavelDinamica}");
 
+variavelDinamica = "texto";
+
+Console.WriteLine($"Tipo da variável: {variavelDinamica.GetType()}, Valor: {variavelDinamica}");
+
+/*
 string conteudoArquivo = File.ReadAllText("../../../Arquivos/vendas.json");
 
 List<Venda> listaVenda = JsonConvert.DeserializeObject<List<Venda>>(conteudoArquivo);
@@ -15,7 +22,7 @@ foreach(var item in listaAnonima)
 {
     Console.WriteLine(item);
 }
-
+*/
 
 /*
 var tipoAnonimo = new { Nome = "Carlos", Sobrenome = "Buta", Altura = 1.83 };
@@ -23,7 +30,6 @@ Console.WriteLine("Nome: " + tipoAnonimo.Nome);
 Console.WriteLine("Sobrenome: " + tipoAnonimo.Sobrenome);
 Console.WriteLine("Altura: " + tipoAnonimo.Altura);
 */
-
 
 /*
 bool? desejaReceberEmail = null;
@@ -36,7 +42,6 @@ else
 {
     Console.WriteLine("O usuário não respondeu ou optou por não receber e-mail");
 }*/
-
 
 /*
 string conteudoArquivo = File.ReadAllText("../../../Arquivos/vendas.json");
@@ -65,6 +70,7 @@ string serializado = JsonConvert.SerializeObject(listaVendas, Formatting.Indente
 File.WriteAllText("../../../Arquivos/vendas.json", serializado);
 Console.WriteLine(serializado);
 */
+
 /*
 int numero = 2103;
 bool ehPar = false;
@@ -73,7 +79,6 @@ ehPar = numero % 2 == 0;
 Console.WriteLine($"{numero} é " + (ehPar ? "par" : "ímpar"));
                                     // IF TERNÁRIO ↑↑↑
 */
-
 
 /*
 Pessoa p1 = new Pessoa("Leonardo", "Vtl");
@@ -101,7 +106,6 @@ else
 }
 */
 
-
 /*
 (int Id, string Nome, string Sobrenome, decimal Altura) tupla = (1, "Carlos", "Eduardo", 10.5M);
 
@@ -113,7 +117,6 @@ Console.WriteLine($"Nome: {tupla.Nome}");
 Console.WriteLine($"Sobrenome: {tupla.Sobrenome}");
 Console.WriteLine($"Altura: {tupla.Altura}");]
 */
-
 
 /*
 Dictionary<string, string> estados = new Dictionary<string, string>();
@@ -150,7 +153,6 @@ else
 }
 */
 
-
 /*
 Stack<int> pilha = new Stack<int>();
 
@@ -171,7 +173,6 @@ foreach(int item in pilha)
     Console.WriteLine(item);
 }
 */
-
 
 /*Queue<int> fila = new Queue<int>();
 
@@ -194,10 +195,9 @@ foreach(int item in fila)
 }
 */
 
-
-
+/*
 // new ExemploExcecao().Metodo1();
-
+*/
 
 /*
 try
@@ -219,6 +219,7 @@ finally
 }
 */
 
+/*
 // string dataString = "2022-13-17 18:34";
 
 // bool success = DateTime.TryParseExact(dataString, "yyyy-MM-dd HH:mm", CultureInfo.InvariantCulture, DateTimeStyles.None, out DateTime data);
@@ -257,3 +258,6 @@ finally
 // p1.Sobrenome = "Pita";
 // p1.Idade = 1;
 // p1.Apresentar();
+*/
+
+Console.ReadLine();
