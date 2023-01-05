@@ -27,7 +27,9 @@ List<Venda> listaVenda = JsonConvert.DeserializeObject<List<Venda>>(conteudoArqu
 
 foreach (Venda venda in listaVenda)
 {
-    Console.WriteLine($"Id: {venda.Id}, Produto: {venda.Produto}, Preco: {venda.Preco}, Data da venda: {venda.DataVenda.ToString("dd/MM/yyyy HH:mm")}");
+    Console.WriteLine($"Id: {venda.Id}, Produto: {venda.Produto}, Preco: {venda.Preco}, " +
+                      $"Data da venda: {venda.DataVenda.ToString("dd/MM/yyyy HH:mm")}, "+
+                      $"Desconto: {(venda.Desconto.HasValue ? venda.Desconto : "Sem desconto")}");
 }
 
 Console.ReadLine();
