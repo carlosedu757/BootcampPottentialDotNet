@@ -3,13 +3,21 @@ using System.Data.Common;
 using System.Globalization;
 using Newtonsoft.Json;
 
+
+MeuArray<int> arrayInteiro = new MeuArray<int>();
+
+arrayInteiro.AdiocionarElementoArray(50);
+
+Console.WriteLine(arrayInteiro[0]);
+
+/*
 dynamic variavelDinamica = 4;
 
 Console.WriteLine($"Tipo da variável: {variavelDinamica.GetType()}, Valor: {variavelDinamica}");
 
 variavelDinamica = "texto";
 
-Console.WriteLine($"Tipo da variável: {variavelDinamica.GetType()}, Valor: {variavelDinamica}");
+Console.WriteLine($"Tipo da variável: {variavelDinamica.GetType()}, Valor: {variavelDinamica}");*/
 
 /*
 string conteudoArquivo = File.ReadAllText("../../../Arquivos/vendas.json");
