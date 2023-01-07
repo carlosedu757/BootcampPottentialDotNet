@@ -4,6 +4,14 @@ using System.Globalization;
 using Newtonsoft.Json;
 
 
+int a = 10;
+int b = a;
+b = 60;
+
+Console.WriteLine($"Valor de A: {a} ||||| Valor de B: {b}");
+
+
+/*
 Pessoa p1 = new Pessoa(nome: "Carlos", sobrenome: "Pita");
 Pessoa p2 = p1;
 
@@ -11,7 +19,7 @@ p2.Nome = "Vinicius";
 
 Console.WriteLine(p1.NomeCompleto);
 Console.WriteLine(p2.NomeCompleto);
-
+*/
 
 /*
 int numero = 2103;
