@@ -4,14 +4,23 @@ using System.Globalization;
 using Newtonsoft.Json;
 
 
+Pessoa p1 = new Pessoa(nome: "Carlos", sobrenome: "Pita");
+Pessoa p2 = p1;
 
+p2.Nome = "Vinicius";
+
+Console.WriteLine(p1.NomeCompleto);
+Console.WriteLine(p2.NomeCompleto);
+
+
+/*
 int numero = 2103;
 bool ehPar = false;
 
 ehPar = numero.EhPar();
 Console.WriteLine($"{numero} é " + (ehPar ? "par" : "ímpar"));
                                 // IF TERNÁRIO ↑↑↑
-
+*/
 
 /*
 MeuArray<int> arrayInteiro = new MeuArray<int>();
