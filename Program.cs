@@ -4,11 +4,21 @@ using System.Globalization;
 using Newtonsoft.Json;
 
 
+
+int numero = 2103;
+bool ehPar = false;
+
+ehPar = numero.EhPar();
+Console.WriteLine($"{numero} é " + (ehPar ? "par" : "ímpar"));
+                                // IF TERNÁRIO ↑↑↑
+
+
+/*
 MeuArray<int> arrayInteiro = new MeuArray<int>();
 
 arrayInteiro.AdiocionarElementoArray(50);
 
-Console.WriteLine(arrayInteiro[0]);
+Console.WriteLine(arrayInteiro[0]);*/
 
 /*
 dynamic variavelDinamica = 4;
